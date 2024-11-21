@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Save Big Every Day!",
+    "description": "Discover exclusive coupons and unbeatable deals from your favorite brands. With discounts available on a variety of products, you can start saving big today. ",
+    "button": {
+      "text": "Explore Coupons",
+      "link": "/brands"
+    },
+    "image": "https://i.ibb.co.com/25kKhc5/sale.png"
+  },
+  {
+    "title": "Winter Specials Just for You!",
+    "description": "This winter, get amazing discounts on electronics, fashion, home goods, and more. The best deals of the season are here!",
+    "button": {
+      "text": "Shop Now",
+      "link": "/top-discounts"
+    },
+    "image": "https://i.ibb.co.com/wLp2ZW0/people-shopping-with-credit-card.png"
+  },
+  {
+    "title": "Shop Your Favorites!",
+    "description": "Explore exclusive coupons from top brands and enjoy amazing savings. From fashion to tech, find discounts on your favorite items. Start shopping today!",
+    "button": {
+      "text": "View Brands",
+      "link": "/brands"
+    },
+    "image": "https://i.ibb.co.com/cJfpvYx/coupon-2.png"
+  },
+  {
+    "title": "Personalized Deals, Just for You!",
+    "description": "Sign in to unlock personalized discounts based on your preferences and browsing history. Access special offers and save more on your favorite items.",
+    "button": {
+      "text": "Log In to Explore",
+      "link": "/login"
+    },
+    "image": "https://i.ibb.co.com/mcTkSCq/coupon.png"
+  }
+]

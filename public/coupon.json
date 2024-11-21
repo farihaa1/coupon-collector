@@ -1,0 +1,325 @@
+[
+  {
+    "_id": "1",
+    "brand_name": "ShopX",
+    "rating": 4.5,
+    "description": "Leading online store offering electronics and accessories. ShopX is your go-to destination for high-quality electronics, mobile phones, laptops, and accessories. Our user-friendly platform ensures seamless shopping, and we offer excellent customer service.",
+    "brand_logo": "https://i.ibb.co.com/HrhZ67w/brand1.png",
+    "coupons": [
+      {
+        "coupon_code": "DISCOUNT10",
+        "description": "10% off on electronics",
+        "expiry_date": "2024-12-31",
+        "condition": "Minimum purchase of $100",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "FREESHIP",
+        "description": "Free shipping on all orders",
+        "expiry_date": "2024-11-30",
+        "condition": "No minimum purchase",
+        "coupon_type": "free_shipping"
+      },
+      {
+        "coupon_code": "SALE15",
+        "description": "15% off on select electronics",
+        "expiry_date": "2024-11-25",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_link": "https://shopx.com",
+    "category": "Electronics",
+    "isSaleOn": true
+  },
+  {
+    "_id": "2",
+    "brand_name": "FashionNova",
+    "rating": 4.7,
+    "description": "Stylish fashion for all occasions. FashionNova offers a wide range of trendy clothing, shoes, and accessories for every occasion. Whether you're looking for casual wear or formal outfits, we have everything you need to stay fashionable.",
+    "brand_logo": "https://i.ibb.co.com/Hq67zmW/brand2.webp",
+    "coupons": [
+      {
+        "coupon_code": "NEWYEAR20",
+        "description": "20% off on all items for New Year",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "FASH10",
+        "description": "10% off on your first purchase",
+        "expiry_date": "2024-11-30",
+        "condition": "New customers only",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_link": "https://fashionnova.com",
+    "category": "Fashion",
+    "isSaleOn": true
+  },
+  {
+    "_id": "3",
+    "brand_name": "TechTrends",
+    "rating": 4.2,
+    "description": "Latest tech gadgets and accessories. TechTrends brings you the latest gadgets, smartphones, and accessories from the most reputable tech brands. Stay up-to-date with the newest in tech at affordable prices.",
+    "brand_logo": "https://i.ibb.co.com/wphzBL2/brand3.png",
+    "coupons": [
+      {
+        "coupon_code": "TECH5",
+        "description": "5% off on all tech gadgets",
+        "expiry_date": "2024-11-30",
+        "condition": "Minimum purchase of $200",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "EARPHONES10",
+        "description": "10% off on select earphones",
+        "expiry_date": "2024-12-10",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "GADGETS15",
+        "description": "15% off on all gadgets over $100",
+        "expiry_date": "2024-12-05",
+        "condition": "Minimum purchase of $100",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_link": "https://techtrends.com",
+    "category": "Electronics",
+    "isSaleOn": false
+  },
+  {
+    "_id": "4",
+    "brand_name": "HomeDecor",
+    "rating": 4.0,
+    "description": "Premium home decor and furniture. HomeDecor provides elegant and contemporary furniture, wall art, lighting, and accessories to elevate the aesthetic of your home. Discover timeless pieces for every room in your home.",
+    "brand_logo": "https://i.ibb.co.com/2nvBySZ/brand4.png",
+    "coupons": [
+      {
+        "coupon_code": "DECOR15",
+        "description": "15% off on all home decor items",
+        "expiry_date": "2024-11-25",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "FURNITURE20",
+        "description": "20% off on selected furniture items",
+        "expiry_date": "2024-11-20",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "HOME10",
+        "description": "10% off on home decor accessories",
+        "expiry_date": "2024-12-01",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_link": "https://homedecorplus.com",
+    "category": "Home Decor",
+    "isSaleOn": true
+  },
+  {
+    "_id": "5",
+    "brand_name": "GizmoWorld",
+    "rating": 4.8,
+    "description": "Gadgets, electronics, and more. GizmoWorld offers the latest gadgets and electronics, from smart home devices to portable chargers. Whether you're a tech enthusiast or looking for the latest innovations, GizmoWorld has something for you.",
+    "brand_logo": "https://i.ibb.co.com/XDkkZLS/brand5.png",
+    "coupons": [
+      {
+        "coupon_code": "GIZMO30",
+        "description": "30% off on all electronic items",
+        "expiry_date": "2024-12-15",
+        "condition": "Minimum purchase of $300",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "GADGET10",
+        "description": "10% off on gadgets over $50",
+        "expiry_date": "2024-11-30",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "EARPHONES15",
+        "description": "15% off on select earphones",
+        "expiry_date": "2024-12-10",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_link": "https://gizmoworld.com",
+    "category": "Electronics",
+    "isSaleOn": true
+  },
+  {
+    "_id": "6",
+    "brand_name": "SuperFoods",
+    "rating": 4.3,
+    "description": "Organic and healthy food options. SuperFoods offers a variety of organic, fresh, and healthy food options for those who care about their well-being. We provide everything from snacks to meal kits, all made with organic ingredients.",
+    "brand_logo": "https://i.ibb.co.com/55q6YDY/brand6.png",
+    "coupons": [
+      {
+        "coupon_code": "SUPER10",
+        "description": "10% off on first orders",
+        "expiry_date": "2024-12-01",
+        "condition": "First-time customers only",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "HEALTHY15",
+        "description": "15% off on all health food items",
+        "expiry_date": "2024-12-20",
+        "condition": "Minimum purchase of $100",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "ORGANIC25",
+        "description": "25% off on organic food products",
+        "expiry_date": "2024-11-30",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_link": "https://superfoods.com",
+    "category": "Food",
+    "isSaleOn": false
+  },
+  {
+    "_id": "7",
+    "brand_name": "OutdoorGear",
+    "rating": 4.6,
+    "description": "Top-quality outdoor gear for adventurers. OutdoorGear specializes in providing premium outdoor equipment for adventurers, campers, hikers, and outdoor enthusiasts. From tents to hiking boots, we have everything you need for your next adventure.",
+    "brand_logo": "https://i.ibb.co.com/SRDJrnT/brand7.png",
+    "coupons": [
+      {
+        "coupon_code": "OUTDOOR25",
+        "description": "25% off on outdoor products",
+        "expiry_date": "2024-12-31",
+        "condition": "Minimum purchase of $150",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "CAMPING15",
+        "description": "15% off on camping gear",
+        "expiry_date": "2024-11-30",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "ADVENTURE10",
+        "description": "10% off on select adventure gear",
+        "expiry_date": "2024-12-10",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_link": "https://outdoorgear.com",
+    "category": "Outdoor Gear",
+    "isSaleOn": true
+  },
+  {
+    "_id": "8",
+    "brand_name": "BookStore",
+    "rating": 4.5,
+    "description": "A bookstore for all your reading needs. BookStore provides a wide variety of books, from bestsellers to hidden gems. Whether you're into fiction, non-fiction, self-help, or children's books, we have something for every reader.",
+    "brand_logo": "https://i.ibb.co.com/Zz5r78c/brand7.webp",
+    "coupons": [
+      {
+        "coupon_code": "BOOK10",
+        "description": "10% off on all books",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "NEWBOOK15",
+        "description": "15% off on new arrivals",
+        "expiry_date": "2024-11-30",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "FAVORITE20",
+        "description": "20% off on favorite genre books",
+        "expiry_date": "2024-12-15",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_link": "https://bookstore.com",
+    "category": "Books",
+    "isSaleOn": false
+  },
+  {
+    "_id": "9",
+    "brand_name": "PetShop",
+    "rating": 4.4,
+    "description": "Everything for your pets, from food to accessories. PetShop provides all the essentials for your pets, including premium food, accessories, grooming products, and toys. We are dedicated to making your pets happy and healthy.",
+    "brand_logo": "https://i.ibb.co.com/9Y9S1D9/brand9.png",
+    "coupons": [
+      {
+        "coupon_code": "PET25",
+        "description": "25% off on pet food",
+        "expiry_date": "2024-12-20",
+        "condition": "Minimum purchase of $50",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "PETTOY15",
+        "description": "15% off on pet toys",
+        "expiry_date": "2024-11-30",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "ACCESSORY10",
+        "description": "10% off on pet accessories",
+        "expiry_date": "2024-12-05",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_link": "https://petshop.com",
+    "category": "Pets",
+    "isSaleOn": true
+  },
+  {
+    "_id": "10",
+    "brand_name": "FitnessPro",
+    "rating": 4.1,
+    "description": "Gym equipment and fitness gear. FitnessPro provides high-quality gym equipment, fitness accessories, and apparel for fitness enthusiasts. From weight sets to yoga mats, we have all the gear you need to stay fit and healthy.",
+    "brand_logo": "https://i.ibb.co.com/NrScDky/brand10.png",
+    "coupons": [
+      {
+        "coupon_code": "FITNESS15",
+        "description": "15% off on fitness equipment",
+        "expiry_date": "2024-12-15",
+        "condition": "Minimum purchase of $100",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "GYMGEAR10",
+        "description": "10% off on gym accessories",
+        "expiry_date": "2024-11-30",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon_code": "HEALTH20",
+        "description": "20% off on fitness apparel",
+        "expiry_date": "2024-12-05",
+        "condition": "No minimum purchase",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_link": "https://fitnesspro.com",
+    "category": "Fitness",
+    "isSaleOn": true
+  }
+]

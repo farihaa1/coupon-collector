@@ -38,8 +38,9 @@ const Navbar = () => {
           Brands
         </NavLink>
       </li>
-      <li>
-        {user && (
+
+      {user && (
+        <li>
           <NavLink
             to="/profile"
             className={({ isActive }) =>
@@ -48,8 +49,9 @@ const Navbar = () => {
           >
             My Profile
           </NavLink>
-        )}
-      </li>
+        </li>
+      )}
+
       <li>
         <NavLink
           to="/about-dev"
@@ -111,8 +113,6 @@ const Navbar = () => {
       <div className="navbar-end flex gap-2">
         {user ? (
           <>
-            
-
             <div className="flex items-center space-x-4">
               <div className="dropdown dropdown-end text-gray-500">
                 <div className="dropdown dropdown-end text-gray-500">
@@ -121,7 +121,7 @@ const Navbar = () => {
                     role="button"
                     className="btn btn-ghost btn-circle avatar"
                   >
-                    <div className="w-10 rounded-full">
+                    <div className="w-16 rounded-full">
                       <img
                         alt="Tailwind CSS Navbar component"
                         src={user.photoURL}
@@ -133,25 +133,21 @@ const Navbar = () => {
                       tabIndex={0}
                       className=" dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 px-3 shadow space-y-2 py-8"
                     >
-                      
-                      <li >
-                       <label className="text-sm flex flex-col justify-start items-start">
-                      <span> Email:</span>
-                       <span>{user.email}</span>
-                       </label>
+                      <li>
+                        <label className="text-sm flex flex-col justify-start items-start">
+                          <span> Email:</span>
+                          <span>{user.email}</span>
+                        </label>
                       </li>
                       <li className="flex w-28">
-                      <button
-                      onClick={handleLogout}
-                      className="bg-red-500 px-4 py-2 text-white rounded-lg hover:bg-red-600"
-                    >
-                      Log Out
-                    </button>
+                        <button
+                          onClick={handleLogout}
+                          className="bg-red-500 px-4 py-2 text-white rounded-lg hover:bg-red-600"
+                        >
+                          Log Out
+                        </button>
                       </li>
                     </ul>
-
-                  
-                   
                   </div>
                 </div>
               </div>

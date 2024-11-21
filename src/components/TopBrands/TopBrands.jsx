@@ -5,7 +5,10 @@ const TopBrands = () => {
   const data = useLoaderData();
 
   return (
-    <div className="flex flex-col gap-2 mt-12 py-14">
+    <div data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="400"
+    data-aos-offset="0" className="flex flex-col gap-2 mt-12 py-14">
       <h2 className="text-2xl font-bold md:text-5xl text-blue-950 mb-8 md:mb-12">
         Top Brands
       </h2>
@@ -17,7 +20,7 @@ const TopBrands = () => {
               <div>
                 <Link
                   key={brand._id}
-                  to={`/brand-details/${brand._id}`}
+                  to={`/brands/${brand._id}`}
                   className="brand-logo"
                 >
                   <img

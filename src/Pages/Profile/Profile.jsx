@@ -6,7 +6,9 @@ const Profile = () => {
   const { user } = useContext(AuthContext);
 
   return (
-    <div className="w-11/12 max-w-6xl mx-auto my-12">
+    <div  data-aos="fade-up"
+    data-aos-duration="3000" 
+    data-aos-delay="400" className="w-11/12 max-w-6xl mx-auto my-12">
       <h2 className="text-2xl font-bold my-6">Profile information:</h2>
       {user ? (
         <div className="flex flex-col gap-1 my-8">

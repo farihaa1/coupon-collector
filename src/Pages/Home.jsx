@@ -6,15 +6,21 @@ import BrandsOnSale from "../components/BrandsOnSale/BrandsOnSale";
 const Home = () => {
   return (
     <div className=" font-poppins">
-      <div className="bg-[#bbf4ff4a] ">
-        <div className="w-11/12 mx-auto">
+      <div  data-aos="fade-up"
+    data-aos-duration="3000" 
+    data-aos-delay="400" className="bg-[#bbf4ff4a] ">
+        <div  className="w-11/12 mx-auto">
           <BannerSlider></BannerSlider>
         </div>
       </div>
-      <section className="w-11/12 mx-auto">
+      <section  data-aos="fade-up"
+    data-aos-duration="3000" 
+    data-aos-delay="400" className="w-11/12 mx-auto">
         <TopBrands></TopBrands>
       </section>
-      <section className="w-11/12 mx-auto">
+      <section  data-aos="fade-up"
+    data-aos-duration="3000" 
+    data-aos-delay="400" className="w-11/12 mx-auto">
         <BrandsOnSale></BrandsOnSale>
       </section>
 

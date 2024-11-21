@@ -1,11 +1,12 @@
 import { useLoaderData, Link } from 'react-router-dom';
+import 'animate.css';
 
 const BrandsOnSale = () => {
   const data = useLoaderData(); 
   const brandsOnSale = data.filter(brand => brand.isSaleOn);
 
   return (
-    <div  className="my-12 lg:my-16">
+    <div style={{ animationDuration: "3s" }}  className="my-12 lg:my-16 animate__animated animate__zoomIn animate__delay-2s">
       <h2 className="text-2xl font-bold  md:text-5xl text-center my-12 text-blue-950">Brands on Sale</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-6">
         {brandsOnSale.map((brand) => (

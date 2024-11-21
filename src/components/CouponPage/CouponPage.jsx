@@ -2,26 +2,6 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { toast } from "react-toastify";
 
-// {
-//     "_id": "14",
-//     "brand_name": "ToysRUs",
-//     "rating": 4.4,
-//     "description": "Toys for all ages.",
-//     "brand_logo": "https://i.ibb.co.com/VDJrgJH/brand14.png",
-//     "coupons": [
-//       {
-//         "coupon_code": "TOYS10",
-//         "description": "10% off on all toys",
-//         "expiry_date": "2024-12-31",
-//         "condition": "No minimum purchase",
-//         "coupon_type": "percentage"
-//       }
-//     ],
-//     "shop_link": "https://toysrus.com",
-//     "category": "Toys",
-//     "isSaleOn": false
-//   },
-
 const handleCopy = (couponCode) => {
   toast.success(`Coupon code "${couponCode}" copied successfully!`);
 };
@@ -32,7 +12,7 @@ const CouponPage = () => {
   const brand = data.find((item) => parseInt(item._id) === parseInt(id));
 
   return (
-    <div className="w-10/12 mx-auto px-4 my-12 lg:my-12">
+    <div style={{ animationDuration: "3s" }} className="w-10/12 mx-auto px-4 my-12 lg:my-12 animate__animated animate__fadeInUp">
       <div className="text-center flex flex-col gap-4 max-w-4xl mx-auto my-12">
         <img
           src={brand.brand_logo}

@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-blue-950 text-white p-10 text-lg">
+    <div style={{ animationDuration: "3s" }}  className=" bg-blue-950 text-white lg:p-4 text-lg animate__animated animate__fadeIn">
+      <footer  className="footer bg-blue-950 text-white p-10 text-lg">
       <nav>
         <h6 className="footer-title font-semibold text-xl">Services</h6>
         <Link to='/' className="link link-hover">Home</Link>
@@ -57,6 +58,7 @@ const Footer = () => {
         </div>
       </nav>
     </footer>
+    </div>
   );
 };
 

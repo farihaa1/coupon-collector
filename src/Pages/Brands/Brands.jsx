@@ -12,18 +12,9 @@ const BrandsPage = ({ user }) => {
     brand.brand_name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const handleCouponClick = (brandId) => {
-    if (user) {
-      navigate(`/brand-details/${brandId}`);
-    } else {
-      navigate("/login");
-    }
-  };
 
   return (
-    <div  data-aos="fade-up"
-    data-aos-duration="3000" 
-    data-aos-delay="400" className="container mx-auto my-8 px-4 lg:my-12">
+    <div  style={{ animationDuration: "3s" }}   className="container mx-auto my-8 px-4 lg:my-12 animate__fadeIn">
       <h1 className="text-4xl font-bold text-center mb-6 text-blue-950">
         All Brands
       </h1>
@@ -41,9 +32,6 @@ const BrandsPage = ({ user }) => {
       <div className="brands-list flex flex-col gap-6">
         {filteredBrands.map((brand) => (
           <div
-          data-aos="fade-up"
-          data-aos-duration="3000" 
-          data-aos-delay="200"
             key={brand._id}
             className="border p-4 lg:p-8 rounded-lg  flex items-center gap-4"
           >

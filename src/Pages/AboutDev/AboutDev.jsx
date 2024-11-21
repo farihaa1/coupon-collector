@@ -1,11 +1,10 @@
 import React from "react";
 
 const AboutDev = () => {
+  
   return (
-    <main  className="bg-gray-100 py-12 px-6">
-      <div  data-aos="fade-up"
-    data-aos-duration="3000" 
-    data-aos-delay="400" className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 md:p-12">
+    <main  className="bg-gray-100 py-12 px-6 ">
+      <div style={{ animationDuration: "3s" }}  className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 md:p-12 animate__animated animate__fadeInUp">
         <h1 className="text-2xl font-bold text-blue-950 mb-4">About the Developer</h1>
         <p className="text-gray-700 my-4 text-base ">
           Hello! I am <span className="font-bold">Fariha</span>, a passionate web developer with expertise in creating responsive and user-friendly web applications. 

@@ -53,7 +53,7 @@ const Login = () => {
 
   return (
     <div className="hero bg-base-200 py-16">
-      <div className="hero-content flex-col lg:flex-row-reverse w-full">
+      <div style={{ animationDuration: "3s" }}   className="hero-content flex-col lg:flex-row-reverse w-full animate__animated animate__fadeInUp">
         <div className="card bg-base-100 w-full max-w-lg shrink-0 shadow-xl ">
           <h1 className="text-3xl md:text-4xl font-bold text-center mt-8 text-blue-950">
             Login now!

@@ -60,7 +60,7 @@ const Registration = () => {
   };
 
   return (
-    <div className="hero bg-base-200 py-12 mb-8">
+    <div className="hero bg-base-200 py-16">
       <div className="hero-content flex-col lg:flex-row-reverse w-full">
         <div className="card bg-base-100 w-full max-w-lg shrink-0 shadow-xl">
           <h1 className="text-4xl font-bold text-center mt-8 text-blue-950">
@@ -123,13 +123,13 @@ const Registration = () => {
                   name="password"
                   value={formValues.password}
                   onChange={handleInputChange}
-                  className="input input-bordered w-full pr-12"  // Add padding-right for the eye button
+                  className="input input-bordered w-full pr-12"  
                   required
                   aria-label="Enter your password"
                 />
                 <button
                   type="button"
-                  className="absolute top-1/2 right-3 transform -translate-y-1/2"
+                  className="absolute top-1/2 text-2xl right-3 transform -translate-y-1/2"
                   onClick={() => setShowPassword((prev) => !prev)}
                   aria-label="Toggle password visibility"
                 >

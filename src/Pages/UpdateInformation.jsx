@@ -25,7 +25,7 @@ const UpdateInformation = () => {
   return (
     <div className="hero-content flex-col lg:flex-row-reverse w-full mx-auto">
      <div className="card bg-base-100 w-full max-w-md shrink-0 shadow-xl mx-auto">
-      <h2 className="text-4xl font-bold text-center mt-8 text-blue-950">
+      <h2 className="text-2xl font-bold text-center mt-8 text-blue-950">
         Update Your Information
       </h2>
       

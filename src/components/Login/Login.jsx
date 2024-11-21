@@ -52,16 +52,16 @@ const Login = () => {
   };
 
   return (
-    <div className="hero bg-base-200 py-12 mb-12">
+    <div className="hero bg-base-200 py-16">
       <div className="hero-content flex-col lg:flex-row-reverse w-full">
-        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-xl ">
-          <h1 className="text-4xl font-bold text-center mt-8 text-blue-950">
+        <div className="card bg-base-100 w-full max-w-lg shrink-0 shadow-xl ">
+          <h1 className="text-3xl md:text-4xl font-bold text-center mt-8 text-blue-950">
             Login now!
           </h1>
           <form onSubmit={handleOnSubmit} className="card-body">
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Email</span>
+                <span className="text-base md:text-lg">Email</span>
               </label>
               <input
                 type="email"
@@ -75,7 +75,7 @@ const Login = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Password</span>
+                <span className="text-base md:text-lg">Password</span>
               </label>
               <div className="relative">
                 <input
@@ -89,13 +89,13 @@ const Login = () => {
                 />
                 <span
                   onClick={() => setShowPassword((prev) => !prev)}
-                  className="absolute top-1/2 right-3 transform -translate-y-1/2 cursor-pointer"
+                  className="absolute text-2xl top-1/2 right-3 transform -translate-y-1/2 cursor-pointer"
                 >
                   {showPassword ? <IoMdEye /> : <FaEyeSlash />}
                 </span>
               </div>
               <label className="label">
-              <Link to={`/forgot-password?email=${formValues.email}`} className="text-lg">
+              <Link to={`/forgot-password?email=${formValues.email}`} className="text-sm text-gray-500">
                 Forgot Password?
               </Link>
               </label>
@@ -120,7 +120,7 @@ const Login = () => {
           </form>
 
           
-          <p className="text-center mb-6 text-2xl font-semibold text-blue-950">or</p>
+          <p className="text-center mb-6 text-xl font-semibold text-blue-950">or</p>
           <div className="flex justify-center">
             <button
               onClick={handleGoogleLoginClick}

@@ -17,7 +17,7 @@ const BannerSlider = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-center items-center mx-auto mt-8 text-[#22085e] py-12 ">
+    <div className="w-full flex justify-center items-center mx-auto text-[#22085e] py-16 px-4">
       <Swiper
         pagination={{ dynamicBullets: true }}
         navigation={true}
@@ -28,12 +28,12 @@ const BannerSlider = () => {
           <SwiperSlide key={index}>
             <div className="w-full font-bold flex flex-col lg:flex-row justify-center items-center p-4">
               {/* Text Section */}
-              <div className="w-full lg:w-1/2 text-center lg:text-left text-4xl lg:text-6xl flex flex-col pl-8 gap-8">
+              <div className="w-full lg:w-1/2 text-center lg:text-left text-3xl lg:text-5xl flex flex-col pl-12 gap-8">
                 <h2>{slide.title}</h2>
-                <p className="text-lg font-normal ">{slide.description}</p>
+                <p className="text-base font-normal ">{slide.description}</p>
                 <div>
                   <Link
-                    className="btn btn-primary text-lg text-white"
+                    className="btn btn-primary text-md text-white"
                     to={slide.button.link}
                   >
                     {slide.button.text}
@@ -41,7 +41,6 @@ const BannerSlider = () => {
                 </div>
               </div>
 
-              {/* Image Section */}
               <div className="w-full lg:w-1/2 p-4 h-[20%]">
                 <img
                   src={slide.image}

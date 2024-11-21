@@ -6,7 +6,7 @@ const TopBrands = () => {
 
   return (
     <div className="flex flex-col gap-2 mt-12 py-14">
-      <h2 className="text-2xl font-bold md:text-6xl text-blue-950 mb-8 md:mb-12">
+      <h2 className="text-2xl font-bold md:text-5xl text-blue-950 mb-8 md:mb-12">
         Top Brands
       </h2>
 

@@ -27,14 +27,11 @@ const ForgotPassword = () => {
       await resetPassword(email);
       toast.success("Password reset email sent!");
 
-      await logOut();
-
-      // Show a button or message prompting the user to open Gmail in a new tab
-      // instead of directly calling window.open()
+      await logOut().then(() => navigate("/"))
 
       setTimeout(() => {
         window.open("https://mail.google.com", "_blank");
-      }, 1000); // Wait a second before opening Gmail
+      }, 1000); 
     } catch (err) {
       setError("Error during password reset: " + err.message);
       toast.error(err.message || "Password reset failed!");

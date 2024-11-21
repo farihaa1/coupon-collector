@@ -3,7 +3,7 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home";
 import Brands from "../Pages/Brands/Brands";
 import Profile from "../Pages/Profile/Profile";
-import AboutDev from "../components/AboutDev/AboutDev";
+import AboutDev from "../Pages/AboutDev/AboutDev";
 import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
 import CouponPage from "../components/CouponPage/CouponPage";
 import Login from "../components/Login/Login";

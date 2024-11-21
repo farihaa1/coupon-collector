@@ -7,9 +7,9 @@ const Header = () => {
 
 
   return (
-    <div className="flex flex-col items-center mt-6 lg:my-8">
+    <div className="w-11/12 mx-auto flex flex-col items-center pt-4 md:py-4">
       {user &&  (
-        <h1 className="text-3xl mb-4 lg:mb-4 font-semibold text-primary">
+        <h1 className="text-lg md:text-2xl mb-2 lg:mb-4 font-semibold text-white">
           Welcome, {user.displayName}!
         </h1>
       ) }

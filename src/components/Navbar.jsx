@@ -1,10 +1,11 @@
-import { useContext } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const navigate = useNavigate();
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleLogout = async () => {
     try {
@@ -21,7 +22,7 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `border-none bg-none ${isActive ? "text-primary" : "text-black"}`
+            isActive ? "text-yellow-400" : "hover:text-yellow-300"
           }
         >
           Home
@@ -31,33 +32,29 @@ const Navbar = () => {
         <NavLink
           to="/brands"
           className={({ isActive }) =>
-            `border-none bg-none ${isActive ? "text-primary" : "text-black"}`
+            isActive ? "text-yellow-400" : "hover:text-yellow-300"
           }
         >
           Brands
         </NavLink>
       </li>
-      {user && (
-        <>
-          <li>
-            <NavLink
-              to="/profile"
-              className={({ isActive }) =>
-                `border-none bg-none ${
-                  isActive ? "text-primary" : "text-black"
-                }`
-              }
-            >
-              My Profile
-            </NavLink>
-          </li>
-        </>
-      )}
+      <li>
+        {user && (
+          <NavLink
+            to="/profile"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-400" : "hover:text-yellow-300"
+            }
+          >
+            My Profile
+          </NavLink>
+        )}
+      </li>
       <li>
         <NavLink
           to="/about-dev"
           className={({ isActive }) =>
-            `border-none bg-none ${isActive ? "text-primary" : "text-black"}`
+            isActive ? "text-yellow-400" : "hover:text-yellow-300"
           }
         >
           About Dev
@@ -67,13 +64,18 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar gap-4">
+    <div className="navbar gap-4 text-white">
       <div className="navbar-start">
         <div className="dropdown z-10">
-          <div tabIndex={0} role="button" className="mr-3 lg:hidden">
+          <div
+            tabIndex={0}
+            role="button"
+            className="mr-3 lg:hidden"
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8 md:h-10 md:w-10"
+              className="h-6 w-6 md:h-10 md:w-10"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -86,77 +88,90 @@ const Navbar = () => {
               />
             </svg>
           </div>
-          <ul
-            tabIndex={0}
-            className="menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 py-6 px-4 shadow"
-          >
-            {links}
-          </ul>
+          {dropdownOpen && (
+            <ul
+              tabIndex={0}
+              className="menu-sm dropdown-content bg-base-100 text-gray-500 rounded-box z-[1] mt-3 w-52 py-6 px-4 shadow"
+            >
+              {links}
+            </ul>
+          )}
         </div>
-        <a className="text-xl md:text-3xl font-bold">
-          Coup<span className="text-primary">on</span>
-        </a>
+        <Link to="/" className="text-lg md:text-2xl font-bold">
+          Discount <span className="text-yellow-400">PRO</span>
+        </Link>
       </div>
 
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu-horizontal px-1 gap-3 border-none text-xl lg:text-2xl">
+        <ul className="menu-horizontal px-1 gap-4 border-none text-xl lg:text-lg">
           {links}
         </ul>
       </div>
 
       <div className="navbar-end flex gap-2">
         {user ? (
-          <div className="dropdown dropdown-end">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost btn-circle avatar"
-            >
-              <div className="w-10 rounded-full">
-                <img alt="User Avatar" src={user.photoURL} />
+          <>
+            
+
+            <div className="flex items-center space-x-4">
+              <div className="dropdown dropdown-end text-gray-500">
+                <div className="dropdown dropdown-end text-gray-500">
+                  <div
+                    tabIndex={0}
+                    role="button"
+                    className="btn btn-ghost btn-circle avatar"
+                  >
+                    <div className="w-10 rounded-full">
+                      <img
+                        alt="Tailwind CSS Navbar component"
+                        src={user.photoURL}
+                      />
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <ul
+                      tabIndex={0}
+                      className=" dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 px-3 shadow space-y-2 py-8"
+                    >
+                      
+                      <li >
+                       <label className="text-sm flex flex-col justify-start items-start">
+                      <span> Email:</span>
+                       <span>{user.email}</span>
+                       </label>
+                      </li>
+                      <li className="flex w-28">
+                      <button
+                      onClick={handleLogout}
+                      className="bg-red-500 px-4 py-2 text-white rounded-lg hover:bg-red-600"
+                    >
+                      Log Out
+                    </button>
+                      </li>
+                    </ul>
+
+                  
+                   
+                  </div>
+                </div>
               </div>
             </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li>
-                <NavLink to="/profile" className="justify-between">
-                  Profile
-                  <span className="badge">New</span>
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink onClick={handleLogout} to="/">
-                  Logout
-                </NavLink>
-              </li>
-            </ul>
-          </div>
+          </>
         ) : (
-          <>
-            <NavLink
+          <div className="flex items-center space-x-4">
+            <Link
               to="/login"
-              className={({ isActive }) =>
-                `bg-primary text-bold text-base px-4 py-2 rounded-lg md:text-xl text-white border-none ${
-                  isActive ? "opacity-85" : ""
-                }`
-              }
+              className="hover:underline btn btn-primary text-white md:text-base"
             >
               Login
-            </NavLink>
-            <NavLink
-              to="/registration"
-              className={({ isActive }) =>
-                `bg-primary text-bold text-base px-4 py-2 rounded-lg md:text-xl text-white border-none ${
-                  isActive ? "opacity-85" : ""
-                }`
-              }
+            </Link>
+            <Link
+              to="/register"
+              className="hover:underline btn text-white md:text-base btn-primary"
             >
-              Registration
-            </NavLink>
-          </>
+              Register
+            </Link>
+          </div>
         )}
       </div>
     </div>

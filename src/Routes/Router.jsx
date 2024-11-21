@@ -7,10 +7,10 @@ import AboutDev from "../Pages/AboutDev/AboutDev";
 import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
 import CouponPage from "../components/CouponPage/CouponPage";
 import Login from "../components/Login/Login";
-import Registration from "../components/Registration/Registration";
 import ErrorPage from "../Pages/ErrorPage";
 import ForgotPassword from "../components/ForgotPassword";
 import UpdateInformation from "../Pages/UpdateInformation";
+import Registration from "../components/Registration/Registration";
 
 const Router = createBrowserRouter([
   {
@@ -63,7 +63,7 @@ const Router = createBrowserRouter([
       },
       {
         path: "/registration",
-        element: <Registration></Registration>,
+        element: <Registration></Registration> ,
       },
       {
         path: "/forgot-password",

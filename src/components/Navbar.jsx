@@ -175,10 +175,10 @@ const Navbar = () => {
                     <span>{user.email}</span>
                   </label>
                 </li>
-                <li className="flex w-28">
+                <li className="flex w-28 z-10">
                   <button
                     onClick={handleLogout}
-                    className="bg-red-500 px-4 py-2 text-white rounded-lg hover:bg-red-600"
+                    className="bg-red-500 px-4 py-2 text-white rounded-lg hover:bg-red-600 cursor-pointer"
                   >
                     Log Out
                   </button>

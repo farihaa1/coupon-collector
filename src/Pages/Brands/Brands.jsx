@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLoaderData, Link, useNavigate, NavLink } from "react-router-dom";
 import { FaRegStar } from "react-icons/fa6";
+import Navbar from "../../components/Navbar";
 
 const BrandsPage = ({ user }) => {
   const brands = useLoaderData();
@@ -14,7 +15,11 @@ const BrandsPage = ({ user }) => {
 
 
   return (
-    <div  style={{ animationDuration: "3s" }}   className="container mx-auto my-8 px-4 lg:my-12 animate__fadeIn">
+    <div>
+      <nav className="w-full mx-auto z-10 bg-blue-950">
+        <Navbar />
+      </nav>
+      <div  style={{ animationDuration: "3s" }}   className="container mx-auto my-8 px-4 lg:my-12 animate__fadeIn">
       <h1 className="text-4xl font-bold text-center mb-6 text-blue-950">
         All Brands
       </h1>
@@ -73,6 +78,7 @@ const BrandsPage = ({ user }) => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

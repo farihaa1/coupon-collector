@@ -1,9 +1,14 @@
 import React from "react";
+import Navbar from "../../components/Navbar";
 
 const AboutDev = () => {
   
   return (
-    <main  className="bg-gray-100 py-12 px-6 ">
+    <div>
+      <nav className="w-full mx-auto z-10 bg-blue-950">
+        <Navbar />
+      </nav>
+      <main  className="bg-gray-100 py-12 px-6 ">
       <div style={{ animationDuration: "3s" }}  className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 md:p-12 animate__animated animate__fadeInUp">
         <h1 className="text-2xl font-bold text-blue-950 mb-4">About the Developer</h1>
         <p className="text-gray-700 my-4 text-base ">
@@ -51,6 +56,7 @@ const AboutDev = () => {
         </ul>
       </div>
     </main>
+    </div>
   );
 };
 

@@ -1,12 +1,18 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import Navbar from "../../components/Navbar";
 
 const Profile = () => {
   const { user } = useContext(AuthContext);
 
   return (
-    <div  style={{ animationDuration: "2s" }}   className="w-11/12 max-w-6xl mx-auto my-12 animate__animated animate__fadeInLeft">
+
+    <div>
+      <nav className="w-full mx-auto z-10 bg-blue-950">
+        <Navbar />
+      </nav>
+      <div  style={{ animationDuration: "2s" }}   className="w-11/12 max-w-6xl mx-auto my-12 animate__animated animate__fadeInLeft">
       <h2 className="text-2xl font-bold my-6">Profile information:</h2>
       {user ? (
         <div className="flex flex-col gap-1 my-8">
@@ -28,6 +34,7 @@ const Profile = () => {
       ) : (
         <p>No user information available</p>
       )}
+    </div>
     </div>
   );
 };

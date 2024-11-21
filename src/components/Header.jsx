@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
-import Navbar from "../components/Navbar";
 
 const Header = () => {
   const { user} = useContext(AuthContext);
@@ -13,9 +12,7 @@ const Header = () => {
           Welcome, {user.displayName}!
         </h1>
       ) }
-      <nav className="w-full mx-auto z-10 ">
-        <Navbar />
-      </nav>
+      
     </div>
   );
 };

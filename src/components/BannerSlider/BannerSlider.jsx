@@ -24,13 +24,13 @@ const BannerSlider = () => {
         pagination={{ dynamicBullets: true }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper h-full z-0"
+        className="mySwiper h-full"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
              
-              className="w-full font-bold flex flex-col lg:flex-row justify-center items-center p-4 animate__animated animate__fadeIn"
+              className="w-full font-bold flex flex-col lg:flex-row justify-center items-center p-4 "
             >
               <div className="w-full lg:w-1/2 text-center lg:text-left text-3xl lg:text-5xl flex flex-col pl-12 gap-8">
                 <h2>{slide.title}</h2>

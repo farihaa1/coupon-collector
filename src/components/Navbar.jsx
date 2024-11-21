@@ -84,7 +84,7 @@ const Navbar = () => {
   );
 
   return (
-    <div style={{ animationDuration: "3s" }}   className="navbar z-50 gap-4 text-white relative animate__animated animate__fadeInUp">
+    <div   className="navbar z-50 gap-4 text-white relative animate__animated animate__fadeIn">
       {/* Navbar Start */}
       <div className="navbar-start">
         <div className="dropdown relative">

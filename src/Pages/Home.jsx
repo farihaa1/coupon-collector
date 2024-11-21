@@ -2,6 +2,8 @@ import React from "react";
 import BannerSlider from "../components/BannerSlider/BannerSlider";
 import TopBrands from "../components/TopBrands/TopBrands";
 import BrandsOnSale from "../components/BrandsOnSale/BrandsOnSale";
+import HowItWorks from "../components/HowItWorksSection/HowItWorks";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   return (
@@ -11,15 +13,17 @@ const Home = () => {
           <BannerSlider></BannerSlider>
         </div>
       </div>
-      <section  data-aos="fade-up"
-    data-aos-duration="3000" 
-    data-aos-delay="400" className="w-11/12 mx-auto">
+      <section className="w-11/12 mx-auto">
         <TopBrands></TopBrands>
       </section>
-      <section  data-aos="fade-up"
-    data-aos-duration="3000" 
-    data-aos-delay="400" className="w-11/12 mx-auto">
+      <section   className="w-11/12 mx-auto">
         <BrandsOnSale></BrandsOnSale>
+      </section>
+      <section>
+        <HowItWorks></HowItWorks>
+      </section>
+      <section>
+        <Testimonials></Testimonials>
       </section>
 
     </div>

@@ -6,13 +6,14 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCASrr47ELV40_r2zZ6B-N1ZCyLoqIatFg",
-  authDomain: "coupon-collector-43c01.firebaseapp.com",
-  projectId: "coupon-collector-43c01",
-  storageBucket: "coupon-collector-43c01.firebasestorage.app",
-  messagingSenderId: "631814753462",
-  appId: "1:631814753462:web:0451f01abfcda040df6a17"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId ,
+  appId: import.meta.env.VITE_appId,
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

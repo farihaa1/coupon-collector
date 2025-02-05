@@ -52,7 +52,7 @@ DiscountPRO is an e-commerce platform that offers users discounts on a wide rang
 
 1. Clone the repository to your local machine:
     ```bash
-    git clone https://github.com/programming-hero-web-course1/b10-a9-authentication-farihaa1
+    git clone https://github.com/farihaa1/coupon-collector.git
     ```
 
 2. Navigate into the project directory:

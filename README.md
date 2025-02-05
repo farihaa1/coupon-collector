@@ -2,6 +2,10 @@
 
 DiscountPRO is an e-commerce platform that offers users discounts on a wide range of products. The platform includes features like user authentication, a shopping cart, product pages, a profile section, and more.
 
+<div align="center">
+  <img  width="full" src="https://i.ibb.co.com/twxY8TVp/website3.png"  />
+</div>
+
 ## Features
 
 - **User Authentication**: Sign up, login, and logout functionality using Firebase Authentication.
@@ -19,7 +23,23 @@ DiscountPRO is an e-commerce platform that offers users discounts on a wide rang
   - Firebase for authentication
   - React Context API for state management
 - **Backend**: 
-  - Firebase (used for authentication and storing user data)
+  - Firebase (used for authentication and storing user data
+
+## Dev Dependencies
+  - "@tanstack/react-table": "^8.20.6",
+  - "axios": "^1.7.9",
+   - "firebase": "^11.1.0",
+   - "framer-motion": "^11.15.0",
+   - "localforage": "^1.10.0",
+   - "lottie-react": "^2.4.0",
+   - "match-sorter": "^8.0.0",
+   - "react": "^18.3.1",
+   - "react-dom": "^18.3.1",
+   - "react-icons": "^5.4.0",
+   - "react-loading-skeleton": "^3.5.0",
+   - "react-router-dom": "^7.1.0",
+   - "sort-by": "^1.2.0",
+   - "sweetalert2": "^11.15.3"
 
 ## Installation
 
@@ -56,7 +76,7 @@ DiscountPRO is an e-commerce platform that offers users discounts on a wide rang
     npm run dev
     ```
 
-6. Open your browser and go to `http://localhost:3000`.
+6. Open your browser and go to `http://localhost:5000`.
 
 
 
